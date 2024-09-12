@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+ 
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .logo{
+            height: 100px;
+            width: 300px;
+        }
+        .header{
+            margin-left: 50px;
+            display: flex; 
+            flex-direction: row; 
+            width: 15%; 
+            justify-content: space-around;
+        }
+       
+        input{
+            align-self: center;
+            margin-left: 10px;
+        }
+       
+        form div{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+<img class="logo" src="./img/Remove-bg.ai_1726126226270.png" alt="">
+    <form action="/submit" method="POST" style="display: flex; flex-direction: column; width: 30%;">
+        <div>
+            <label for="first-name">EmailDress</label>
+            <input type="text" id="first-name" name="first-name" minlength="2" maxlength="20" required>
+    
+        </div>
+        <div>
+            <label for="ngaysinh">Date of book</label>
+            <input type="date" name="ngaysinh" id="ngaysinh" >
+        </div>
+        <div>
+            <label for="number">Number of people</label>
+            <input type="number" name="number" id="number" max="100" value="10" min="10" step="2">
+        </div>
+       <div>
+        <input type="checkbox" name="love1" id="love1" value="LovePHP">
+        <label for="love1">I agree to the cancellation policy </label><br>
+       </div>
+       
+       
+
+        <input type="submit" value="Book now" style="margin-top: 20px; max-width: 60px; align-self: center;">
+    </form>
+</div>
+
+</body>
+</html>
